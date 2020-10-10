@@ -71,7 +71,7 @@ data='{"phone_id":"'$phone'", "_csrftoken":"'$var2'", "username":"'$user'", "gui
 IFS=$'\n'
 
 hmac=$(echo -n "$data" | openssl dgst -sha256 -hmac "${ig_sig}" | cut -d " " -f2)
-useragent='User-Agent: "Instagram 10.26.0 Android (18/4.3; 320dpi; 720x1280; Xiaomi; HM 1SW; armani; qcom; en_US)"'
+useragent='User-Agent: "Instagram 133.0.0.33.122 Android (18/4.3; 320dpi; 720x1280; ASUS; HM 1SW; armani; qcom; en_US)"'
 
 printf "\e[1;77m[\e[0m\e[1;92m+\e[0m\e[1;77m] Trying to login as\e[0m\e[1;93m %s\e[0m\n" $user
 IFS=$'\n'
